@@ -1,0 +1,27 @@
+:root,
+html[data-theme="light"] {
+  --background: #eee;
+  --text: #1a1a1a;
+}
+
+html[data-theme="dark"] {
+  --background: #1a1a1a;
+  --text: #eee;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+button {
+  padding: 1em 2em;
+  border: 1px solid var(--text);
+  cursor: pointer;
+  color: var(--text);
+}
+
+button.is-dark {
+  background-color: var(--text);
+  color: var(--background);
+}
